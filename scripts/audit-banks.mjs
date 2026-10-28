@@ -35,6 +35,8 @@ const BANKS = [
   'jp-3-question-bank.json',
   'jp-3-2024-question-bank.json',
   'jp-3-2022-question-bank.json',
+  'math-1-question-bank.json',
+  'math-2-question-bank.json',
 ]
 
 const REQUIRED_FIELDS = ['id', 'groupId', 'stem', 'options', 'answerKey', 'explanation']

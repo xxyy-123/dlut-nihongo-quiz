@@ -35,6 +35,8 @@ const banks = [
     'marxism-5',
     'marxism-6',
     'marxism-7',
+    'math-1',
+    'math-2',
     'principles-of-marxism-1',
   ].map((key) => ({ key, file: `${key}-question-bank.json` })),
 ]

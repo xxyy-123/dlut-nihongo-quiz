@@ -27,6 +27,8 @@ describe('CATEGORIES config', () => {
       'marxism-5',
       'marxism-6',
       'marxism-7',
+      'math-1',
+      'math-2',
       'military',
       'party',
       'principles-of-marxism-1',
