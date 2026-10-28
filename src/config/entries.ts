@@ -32,7 +32,7 @@ export const ENTRIES: EntryMeta[] = [
     key: 'japanese2-exams',
     name: '综合日语2',
     icon: '日',
-    desc: '单词与语法 · 历年期末 · 2024年期中',
+    desc: '单词 · 语法（学习通99题 + 2021/2024 真题）',
     papers: ['japanese2', 'jp1-mid24'],
   },
   {
