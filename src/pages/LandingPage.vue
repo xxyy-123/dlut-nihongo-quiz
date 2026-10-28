@@ -78,6 +78,7 @@ async function refresh() {
               !id.startsWith('mil-') &&
               !id.startsWith('mil') &&
               !id.startsWith('computer-') &&
+              !id.startsWith('jp1-mid24-') &&
               !/^w(?:3[7-9]|4[0-3])-/.test(id)
             )
           case 'japanese3':

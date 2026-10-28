@@ -12,6 +12,7 @@ const ROOT = path.resolve(__dirname, '..')
 const PUBLIC = path.join(ROOT, 'public')
 
 const BANKS = [
+  'jp1-mid24-question-bank.json',
   'japanese2-question-bank.json',
   'japanese3-question-bank.json',
   'question-bank.json',

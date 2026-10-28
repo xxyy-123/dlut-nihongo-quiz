@@ -78,6 +78,12 @@ export const COURSE_TREE: TreeNode[] = [
           },
           {
             type: 'leaf',
+            key: 'jp1-mid24',
+            label: '2024年期中',
+            category: 'jp1-mid24',
+          },
+          {
+            type: 'leaf',
             key: 'grammar-notes',
             label: '核心语法整理',
             route: '/grammar-notes',

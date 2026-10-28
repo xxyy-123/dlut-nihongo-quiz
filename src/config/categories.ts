@@ -15,6 +15,17 @@ export interface CategoryMeta {
 
 export const CATEGORIES: CategoryMeta[] = [
   {
+    // 保留已在本地使用的题库标识；原卷实际是综合日语2。
+    key: 'jp1-mid24',
+    short: '2024年期中',
+    long: '综合日语2 · 2024年期中（A卷）',
+    desc: '原卷95题 · 收录91题 · 4题待核对 · 非官方答案',
+    icon: '日',
+    bankFile: 'jp1-mid24-question-bank.json',
+    groupViewTitle: '整卷',
+    groupViewHint: '按原卷题号排列；第3、4、78、88题暂不自动判分，见校对说明。',
+  },
+  {
     key: 'japanese2',
     short: '日语',
     long: '综合日语2',
@@ -307,6 +318,7 @@ export function getCategoryMeta(cat: Category): CategoryMeta {
 }
 
 export const NO_SHUFFLE_CATEGORIES: ReadonlySet<Category> = new Set([
+  'jp1-mid24',
   'history',
   'party',
   'military',

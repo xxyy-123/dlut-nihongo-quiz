@@ -29,6 +29,13 @@ export interface EntryMeta {
 
 export const ENTRIES: EntryMeta[] = [
   {
+    key: 'japanese2-exams',
+    name: '综合日语2',
+    icon: '日',
+    desc: '单词与语法 · 历年期末 · 2024年期中',
+    papers: ['japanese2', 'jp1-mid24'],
+  },
+  {
     key: 'computer-organization',
     name: '计算机组成（软国际）',
     icon: '组',
