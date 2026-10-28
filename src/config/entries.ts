@@ -62,6 +62,12 @@ export const ENTRIES: EntryMeta[] = [
     desc: '第37–43课单词 · 学习通期中 · 2022/2024期末',
     papers: ['japanese3', 'jp-3-2022', 'jp-3-2024', 'jp-3'],
   },
+  {
+    key: 'math',
+    name: '微积分1',
+    icon: '组',
+    papers: ['math-1', 'math-2'],
+  },
 ]
 
 /** 按 key（路由参数）找入口。 */

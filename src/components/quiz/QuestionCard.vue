@@ -11,6 +11,7 @@ import { renderExplanation } from '../../utils/renderExplanation'
 import { renderMarkdown } from '../../utils/renderMarkdown'
 import { highlightUnderlines } from '../../utils/highlightUnderlines'
 import {
+  needsRichMarkdown,
   renderQuestionMarkdown,
   renderQuestionMarkdownInline,
 } from '../../utils/renderQuestionMarkdown'
@@ -50,7 +51,12 @@ const aiExplanationRequest = ref<AIExplanationRequest | null>(null)
 
 // 填空题相关
 const fillAnswer = ref('')
-const technicalQuestion = computed(() => props.question.category.startsWith('computer-'))
+/**
+ * 题干/选项/答案/解析是否需要 KaTeX（公式）或代码块富渲染。
+ * 模板里 5 处 `v-if="technicalQuestion"` 判的都是"要不要走 renderQuestionMarkdown"，
+ * 放宽这个开关即可让高数卷（`math-*`）的公式不再显示成 LaTeX 源码。
+ */
+const technicalQuestion = computed(() => needsRichMarkdown(props.question.category))
 const renderContent = (text: string) =>
   technicalQuestion.value ? renderQuestionMarkdown(text) : renderMarkdown(text)
 const renderedAnswer = computed(() =>

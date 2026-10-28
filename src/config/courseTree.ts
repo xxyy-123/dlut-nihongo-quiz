@@ -214,6 +214,26 @@ export const COURSE_TREE: TreeNode[] = [
       },
     ],
   },
+  {
+    type: 'group',
+    key: 'math-1-group',
+    label: '微积分1',
+    icon: '组',
+    children: [
+      {
+        type: 'leaf',
+        key: 'math-1',
+        label: '春季过程考 · 卷一',
+        category: 'math-1',
+      },
+      {
+        type: 'leaf',
+        key: 'math-2',
+        label: '春季过程考 · 卷二',
+        category: 'math-2',
+      },
+    ],
+  },
 ]
 
 export function findLeafByKey(key: string): TreeNode | undefined {

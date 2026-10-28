@@ -19,6 +19,8 @@ export type Category =
   | 'jp-3'
   | 'jp-3-2024'
   | 'jp-3-2022'
+  | 'math-1'
+  | 'math-2'
 
 export interface SubBankMeta {
   key: string
