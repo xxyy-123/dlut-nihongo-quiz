@@ -218,7 +218,7 @@ export const COURSE_TREE: TreeNode[] = [
     type: 'group',
     key: 'math-1-group',
     label: '微积分1',
-    icon: '组',
+    icon: '微',
     children: [
       {
         type: 'leaf',

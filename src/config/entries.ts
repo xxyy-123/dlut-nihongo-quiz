@@ -65,7 +65,7 @@ export const ENTRIES: EntryMeta[] = [
   {
     key: 'math',
     name: '微积分1',
-    icon: '组',
+    icon: '微',
     papers: ['math-1', 'math-2'],
   },
 ]
