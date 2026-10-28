@@ -1,5 +1,6 @@
 export type Category =
   | 'japanese2'
+  | 'jp1-mid24'
   | 'japanese3'
   | 'history'
   | 'party'
@@ -19,7 +20,6 @@ export type Category =
   | 'jp-3'
   | 'jp-3-2024'
   | 'jp-3-2022'
-  | 'jp1-mid24'
 
 export interface SubBankMeta {
   key: string
