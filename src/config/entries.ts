@@ -37,6 +37,14 @@ export interface EntryMeta {
 
 export const ENTRIES: EntryMeta[] = [
   {
+    key: 'japanese1',
+    name: '综合日语1',
+    icon: '日',
+    desc: '单词 · 期中与期末范围',
+    papers: ['japanese1-midterm', 'japanese1-final'],
+    groups: [{ key: 'words', name: '单词', papers: ['japanese1-midterm', 'japanese1-final'] }],
+  },
+  {
     key: 'japanese2-exams',
     name: '综合日语2',
     icon: '日',

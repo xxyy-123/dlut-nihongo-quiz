@@ -91,6 +91,7 @@ async function refresh() {
               !id.startsWith('mil') &&
               !id.startsWith('computer-') &&
               !id.startsWith('jp1-mid24-') &&
+              !id.startsWith('japanese1-') &&
               !/^(math-|calculus1-|2019-a-7-)/.test(id) &&
               !/^w(?:3[7-9]|4[0-3])-/.test(id)
             )
